@@ -1,21 +1,3 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Chonburi", display;
-  color: "#1e293b"
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,17 +1,7 @@
 export const Nav = () => {
   return (
-    <nav
-      style={{
-        padding: 20,
-        position: "fixed",
-        userSelect: "none",
-      }}
-    >
-      <a
-        href="#"
-        onClick={(e) => e.preventDefault()}
-        style={{ color: "#f59e0b", textDecoration: "none", fontSize: 20 }}
-      >
+    <nav className=" fixed select-none font-athiti top-5 left-5 font-semibold text-2xl text-amber-500">
+      <a href="#" onClick={(e) => e.preventDefault()}>
         ปีใหม่ตอนไหน
       </a>
     </nav>

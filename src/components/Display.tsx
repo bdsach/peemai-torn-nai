@@ -9,35 +9,15 @@ export const Display = () => {
   const dayPassed = dayjs(new Date()).dayOfYear();
   const isLeapYear = dayjs(new Date()).isLeapYear();
   return (
-    <main
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100dvh",
-        gap: 0,
-        userSelect: "none",
-      }}
-    >
-      <div
-        style={{
-          boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-          height: "450px",
-          width: "450px",
-          borderRadius: "50%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 20,
-        }}
-      >
-        <h2>อยากปีใหม่แล้ว อีกกี่วันน้อ!</h2>
-        <h1>
-          ผ่านมาแล้ว <span style={{ color: "#10b981" }}>{dayPassed}</span> วัน
+    <div className="h-screen w-screen flex justify-center items-center">
+      <div className="font-athiti shadow border p-10 md:p-20 aspect-square rounded-full flex flex-col justify-center items-center text-zinc-800 gap-2 md:gap-4">
+        <h2 className="text-xl md:text-3xl text-center">
+          อยากปีใหม่แล้ว อีกกี่วันน้อ!
+        </h2>
+        <h1 className="text-3xl md:text-5xl font-bold">
+          ผ่านมาแล้ว <span className=" text-emerald-500">{dayPassed}</span> วัน
         </h1>
-        <h3>
+        <h3 className="text-xl md:text-3xl text-center">
           อีก{" "}
           {isLeapYear ? (
             <b style={{ color: "#ef4444" }}>{366 - dayPassed}</b>
@@ -47,6 +27,6 @@ export const Display = () => {
           วัน ก็จะปีใหม่แล้วเธอ
         </h3>
       </div>
-    </main>
+    </div>
   );
 };
