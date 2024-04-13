@@ -15,14 +15,14 @@ export const Display = () => {
           อยากปีใหม่แล้ว อีกกี่วันน้อ!
         </h2>
         <h1 className="text-3xl md:text-5xl font-bold">
-          ผ่านมาแล้ว <span className=" text-emerald-500">{dayPassed}</span> วัน
+          ผ่านมาแล้ว <span className="text-emerald-500">{dayPassed}</span> วัน
         </h1>
         <h3 className="text-xl md:text-3xl text-center">
           อีก{" "}
           {isLeapYear ? (
-            <b style={{ color: "#ef4444" }}>{366 - dayPassed}</b>
+            <b className="text-red-500">{366 - dayPassed}</b>
           ) : (
-            <b style={{ color: "#ef4444" }}>{366 - dayPassed}</b>
+            <b className="text-red-500">{366 - dayPassed}</b>
           )}{" "}
           วัน ก็จะปีใหม่แล้วเธอ
         </h3>
